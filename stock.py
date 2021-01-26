@@ -30,6 +30,7 @@ def runner(s):
             print(f"Predicted: {x}")
     except:
         return 'Symbol not found'
-symbol = input("Enter symbol: ")
-runner(symbol)    
+for i in range(int(input("Enter the number of companies you want to predict: "))):
+    symbol = input("Enter symbol: ")
+    runner(symbol)   
 input("Hit enter to close")
